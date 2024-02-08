@@ -5,3 +5,4 @@ Config files include
   - vim
   - neovim
   - git
+  - bash
