@@ -3,3 +3,5 @@ Config files include
   - oh-my-zsh
   - zsh
   - vim
+  - neovim
+  - git
