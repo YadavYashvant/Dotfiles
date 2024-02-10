@@ -5,5 +5,5 @@ Config files include
   - vim
   - neovim
   - git
-  - bash
+  - bash <br>
 (This is not a full fledged setup as some of the things are yet to be setup and configured)
