@@ -1,9 +1,7 @@
-# Config files for my system.
-Config files include 
-  - oh-my-zsh
-  - zsh
-  - vim
-  - neovim
-  - git
-  - bash <br>
-(This is not a full fledged setup as some of the things are yet to be setup and configured)
+# Arch Linux Dotfiles
+
+This repository contains my personal dotfiles for Arch Linux.
+
+## Installation
+
+1. Clone this repository:
