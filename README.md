@@ -15,7 +15,7 @@ sudo pacman -S git hyprland kitty foot fish neovim ags
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Dotfiles.git ~/Dotfiles
+git clone https://github.com/YadavYashvant/Dotfiles.git ~/Dotfiles
 cd ~/Dotfiles
 ```
 
