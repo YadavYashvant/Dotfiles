@@ -130,4 +130,4 @@ export const BarCornerTopright = (monitor = 0) => Widget.Window({
     setup: enableClickthrough,
 });
 
-
+*/
