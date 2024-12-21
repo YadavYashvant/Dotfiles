@@ -107,6 +107,8 @@ export const Bar = async (monitor = 0) => {
     });
 }
 
+/*
+
 export const BarCornerTopleft = (monitor = 0) => Widget.Window({
     monitor,
     name: `barcornertl${monitor}`,
