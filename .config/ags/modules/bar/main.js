@@ -107,7 +107,6 @@ export const Bar = async (monitor = 0) => {
     });
 }
 
-/*
 
 export const BarCornerTopleft = (monitor = 0) => Widget.Window({
     monitor,
@@ -129,5 +128,3 @@ export const BarCornerTopright = (monitor = 0) => Widget.Window({
     child: RoundedCorner('topright', { className: 'corner', }),
     setup: enableClickthrough,
 });
-
-*/
