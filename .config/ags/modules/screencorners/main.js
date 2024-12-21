@@ -31,7 +31,7 @@ export default (monitor = 0, where = 'bottom left', useOverlayLayer = true) => {
         anchor: where.split(' '),
         exclusivity: 'ignore',
         visible: true,
-        child: RoundedCorner(positionString, { className: 'corner-black', }),
+        // child: RoundedCorner(positionString, { className: 'corner-black', }),
         setup: enableClickthrough,
     });
 }
