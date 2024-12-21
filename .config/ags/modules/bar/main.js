@@ -124,6 +124,6 @@ export const BarCornerTopright = (monitor = 0) => Widget.Window({
     anchor: ['top', 'right'],
     exclusivity: 'normal',
     visible: true,
-    child: RoundedCorner('topright', { className: 'corner', }),
+    // child: RoundedCorner('topright', { className: 'corner', }),
     setup: enableClickthrough,
 });
