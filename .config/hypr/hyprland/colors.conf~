@@ -1,8 +1,7 @@
 # exec = export SLURP_ARGS='-d -c E6E6C2BB -b 4A4B3044 -s 00000000'
 
 general {
-    # col.active_border = rgba(E5E3D639)
-    col.active_border = rgba(fcba03)
+    col.active_border = rgba(E5E3D639)
     col.inactive_border = rgba(92918230)
 }
 
