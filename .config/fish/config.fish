@@ -3,6 +3,6 @@ if status is-interactive
     set fish_greeting
 end
 
-alias sl = "ls"
+alias sl="ls"
 
 starship init fish | source
