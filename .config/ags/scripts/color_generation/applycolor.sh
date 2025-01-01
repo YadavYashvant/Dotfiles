@@ -99,7 +99,7 @@ apply_hyprland() {
 
     # Define colors
     active_color="#C08B61"
-    inactive_border="#00ff00"
+    inactive_border=""
 
     # Apply colors
     for i in "${!colorlist[@]}"; do
