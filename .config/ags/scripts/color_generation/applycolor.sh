@@ -98,7 +98,7 @@ apply_hyprland() {
     cp "scripts/templates/hypr/hyprland/colors.conf" "$CACHE_DIR"/user/generated/hypr/hyprland/colors.conf
 
     # Define colors
-    active_color="#ff0000"  # Replace with your desired active color
+    active_color="#ff0000"
     inactive_border="#00ff00"
 
     # Apply colors
