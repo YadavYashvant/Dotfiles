@@ -87,32 +87,6 @@ apply_term() {
     done
 }
 
-apply_hyprland() {
-    # Check if scripts/templates/hypr/hyprland/colors.conf exists
-    if [ ! -f "scripts/templates/hypr/hyprland/colors.conf" ]; then
-        echo "Template file not found for Hyprland colors. Skipping that."
-        return
-    fi
-    # Copy template
-    mkdir -p "$CACHE_DIR"/user/generated/hypr/hyprland
-    cp "scripts/templates/hypr/hyprland/colors.conf" "$CACHE_DIR"/user/generated/hypr/hyprland/colors.conf
-
-    # Define colors
-    active_color="#C08B61"
-    inactive_border="#757575"
-
-    # Apply colors
-    for i in "${!colorlist[@]}"; do
-        sed -i "s/{{ ${colorlist[$i]} }}/${colorvalues[$i]#\#}/g" "$CACHE_DIR"/user/generated/hypr/hyprland/colors.conf
-    done
-
-    # Replace active_color and inactive_border
-    sed -i "s/{{ active_color }}/$active_color/g" "$CACHE_DIR"/user/generated/hypr/hyprland/colors.conf
-    sed -i "s/{{ inactive_border }}/$inactive_border/g" "$CACHE_DIR"/user/generated/hypr/hyprland/colors.conf
-
-    cp "$CACHE_DIR"/user/generated/hypr/hyprland/colors.conf "$XDG_CONFIG_HOME"/hypr/hyprland/colors.conf
-}
-
 # apply_hyprland() {
 #     # Check if scripts/templates/hypr/hyprland/colors.conf exists
 #     if [ ! -f "scripts/templates/hypr/hyprland/colors.conf" ]; then
