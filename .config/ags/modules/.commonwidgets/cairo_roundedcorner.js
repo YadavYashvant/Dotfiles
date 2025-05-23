@@ -8,11 +8,11 @@ export const RoundedCorner = (place, props) => Widget.DrawingArea({
     vpack: place.includes('top') ? 'start' : 'end',
     setup: (widget) => Utils.timeout(1, () => {
         const c = widget.get_style_context().get_property('background-color', Gtk.StateFlags.NORMAL);
-        const r = widget.get_style_context().get_property('border-radius', Gtk.StateFlags.NORMAL);
+        const r = widget.get_style_context().get_property('border-radius', Gtk.StateFlags.NORMAL)/4;
         widget.set_size_request(r, r);
         widget.connect('draw', Lang.bind(widget, (widget, cr) => {
             const c = widget.get_style_context().get_property('background-color', Gtk.StateFlags.NORMAL);
-            const r = widget.get_style_context().get_property('border-radius', Gtk.StateFlags.NORMAL);
+            const r = widget.get_style_context().get_property('border-radius', Gtk.StateFlags.NORMAL)/4;
             // const borderColor = widget.get_style_context().get_property('color', Gtk.StateFlags.NORMAL);
             // const borderWidth = widget.get_style_context().get_border(Gtk.StateFlags.NORMAL).left; // ur going to write border-width: something anyway
             widget.set_size_request(r, r);
